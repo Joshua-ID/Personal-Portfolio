@@ -3,10 +3,12 @@
     <HeaderSection />
     <SideBar />
     <HeroSection />
+    <!-- <FooterSection /> -->
   </div>
 </template>
 
 <script>
+import FooterSection from './components/FooterSection.vue'
 import HeaderSection from './components/HeaderSection.vue'
 import HeroSection from './components/HeroSection.vue'
 import SideBar from './components/SideBar.vue'
@@ -17,6 +19,7 @@ export default {
     HeaderSection,
     HeroSection,
     SideBar,
+    FooterSection,
   },
 }
 </script>
