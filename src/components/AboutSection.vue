@@ -20,6 +20,7 @@ export default {
 
 <style scoped>
 .about-section {
+  padding-top: 4rem;
   display: flex;
   gap: 2rem;
   flex-direction: column;

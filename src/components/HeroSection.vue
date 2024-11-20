@@ -29,7 +29,8 @@ export default {
 
 <style>
 .hero-section {
-  height: 90vh;
+  position: relative;
+  height: 80vh;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
