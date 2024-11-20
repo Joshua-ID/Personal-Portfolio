@@ -2,7 +2,6 @@
   <div class="landing-page-container">
     <HeroSection />
     <AboutSection />
-
     <FooterSection />
   </div>
 </template>

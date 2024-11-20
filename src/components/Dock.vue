@@ -16,9 +16,39 @@ export default {
     }
   },
 
-  computed: {
+  created() {
+    // Check system theme on page load and set it accordingly
+    const systemPreference = window.matchMedia('(prefers-color-scheme: dark)').matches
+
+    // Set the theme to system default if no user preference is saved
+    const savedTheme = localStorage.getItem('theme')
+    if (savedTheme) {
+      this.darkMood = savedTheme === 'dark'
+    } else {
+      this.darkMood = systemPreference
+    }
+
+    // Apply the theme on page load
+    this.applyTheme()
+  },
+
+  methods: {
+    // Toggle dark mode
     clickToggleMood() {
       this.darkMood = !this.darkMood
+      this.applyTheme() // Apply the theme when toggled
+      localStorage.setItem('theme', this.darkMood ? 'dark' : 'light') // Save the theme preference in localStorage
+    },
+
+    // Apply the theme by adding/removing classes on the body
+    applyTheme() {
+      if (this.darkMood) {
+        document.body.classList.add('dark-mode')
+        document.body.classList.remove('light-mode')
+      } else {
+        document.body.classList.add('light-mode')
+        document.body.classList.remove('dark-mode')
+      }
     },
   },
 }
@@ -44,7 +74,6 @@ export default {
   i {
     padding: 10px;
     border-radius: 30px;
-    background: rgb(246, 246, 246);
     font-size: 30px;
     transition: transform 0.3s ease-in-out;
 
