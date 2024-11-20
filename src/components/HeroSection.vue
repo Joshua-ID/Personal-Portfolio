@@ -43,7 +43,7 @@ export default {
 
     .title {
       font-family: var(--fancy-font);
-      font-size: 6rem;
+      font-size: clamp(2rem, -0.1277rem + 6.8085vw, 6rem);
     }
 
     .description {

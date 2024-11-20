@@ -47,7 +47,7 @@ export default {
 
   .item {
     white-space: nowrap;
-    font-size: 0.9rem;
+    font-size: clamp(0.8125rem, 0.7793rem + 0.1064vw, 0.875rem);
     padding: 0.5rem 0.8rem;
     backdrop-filter: blur(10px);
     border-radius: 15px;

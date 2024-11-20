@@ -30,7 +30,7 @@ export default {
   .left-content {
     .brand-logo {
       font-family: var(--header-font);
-      font-size: 1.5rem;
+      font-size: clamp(1rem, 0.734rem + 0.8511vw, 1.5rem);
       font-weight: 760;
     }
   }
@@ -47,6 +47,7 @@ export default {
       list-style: none;
 
       li {
+        font-size: clamp(0.875rem, 0.742rem + 0.4255vw, 1.125rem);
         cursor: pointer;
         transition: transform 0.2s ease-in-out;
 

@@ -23,7 +23,7 @@
 
 .label {
   font-family: var(--header-font);
-  font-size: 2rem;
+  font-size: clamp(1.125rem, 0.6596rem + 1.4894vw, 2rem);
   font-weight: 700;
 }
 

@@ -28,7 +28,7 @@ export default {
     align-items: center;
 
     .footer-note {
-      font-size: 1rem;
+      font-size: clamp(0.8125rem, 0.7128rem + 0.3191vw, 1rem);
       font-family: var(--fancy-font);
     }
   }

@@ -23,10 +23,3 @@ export default {
   },
 }
 </script>
-
-<style>
-.main-container {
-  /* height: 100vh; */
-  /* background: var(--light-mood); */
-}
-</style>
