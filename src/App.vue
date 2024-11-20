@@ -2,24 +2,21 @@
   <div class="main-container">
     <HeaderSection />
     <SideBar />
-    <HeroSection />
-    <!-- <FooterSection /> -->
+    <LandingPage />
   </div>
 </template>
 
 <script>
-import FooterSection from './components/FooterSection.vue'
 import HeaderSection from './components/HeaderSection.vue'
-import HeroSection from './components/HeroSection.vue'
+import LandingPage from './components/LandingPage.vue'
 import SideBar from './components/SideBar.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderSection,
-    HeroSection,
     SideBar,
-    FooterSection,
+    LandingPage,
   },
 }
 </script>
@@ -27,6 +24,6 @@ export default {
 <style>
 .main-container {
   /* height: 100vh; */
-  background: var(--light-mood);
+  /* background: var(--light-mood); */
 }
 </style>

@@ -7,13 +7,20 @@
   font-family: 'Geist Mono', poppins, arial;
   /* font-family: 'Geist Mono', Roboto, 'Sour Gummy', poppins; */
   font-size: 18px;
+  color: var(--dark-color);
 }
 
 :root {
   --dark-mood: #001303;
-  --dark-color: #0f111a;
   --light-color: #e8eef1;
+  --dark-color: #0f184a;
   --main-color: #057dcd;
   --header-font: poppins;
   --fancy-font: 'Sour Gummy';
+}
+
+.label {
+  font-family: var(--header-font);
+  font-size: 2rem;
+  font-weight: 700;
 }

@@ -20,9 +20,8 @@ export default {
 
 <style scoped>
 .footer-section {
-  margin: auto;
-  max-width: 1440px;
-  padding: 3rem;
+  border-top: 2px solid gray;
+  padding: 1rem 0 3rem;
   .copyright {
     display: flex;
     justify-content: space-between;
