@@ -30,7 +30,6 @@ export default {
 <style>
 .hero-section {
   position: relative;
-  height: 80vh;
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
@@ -43,10 +42,11 @@ export default {
 
     .title {
       font-family: var(--fancy-font);
-      font-size: clamp(2rem, -0.1277rem + 6.8085vw, 6rem);
+      font-size: clamp(2.5rem, -0.1277rem + 6.8085vw, 6rem);
     }
 
     .description {
+      font-size: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
       max-width: 700px;
       line-height: 30px;
     }

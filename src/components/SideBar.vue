@@ -1,16 +1,15 @@
 <template>
   <div class="side-bar-container">
-    <div class="social-icon-wrapper">
-      <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-linkedin"></i>
-      <i class="fa-brands fa-discord"></i>
-    </div>
+    <SideBarItem />
   </div>
 </template>
 
 <script>
+import SideBarItem from './SideBarItem.vue'
+
 export default {
   name: 'SideBar',
+  components: { SideBarItem },
 }
 </script>
 
@@ -20,25 +19,16 @@ export default {
   padding: 2rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: fixed;
+  z-index: 1000;
 
-  .social-icon-wrapper {
-    display: flex;
-    margin-top: auto;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
+  @media (max-width: 1440px) {
+    padding: 1.5rem;
+  }
 
-    i {
-      font-size: 20px;
-      cursor: pointer;
-      transition: transform 0.2s;
-    }
-
-    i:hover {
-      transform: scale(1.2);
-      transform: translateY(-5px);
-    }
+  @media (max-width: 660px) {
+    display: none;
   }
 }
 </style>

@@ -74,8 +74,7 @@ export default {
   i {
     padding: 10px;
     border-radius: 30px;
-    font-size: clamp(1.125rem, 0.7261rem + 1.2766vw, 1.875rem);
-    /* font-size: 30px; */
+    font-size: clamp(1.1875rem, 0.8218rem + 1.1702vw, 1.875rem);
     transition: transform 0.3s ease-in-out;
 
     &:hover {

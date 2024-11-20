@@ -1,5 +1,6 @@
 <template>
   <div class="footer-section">
+    <SideBarItem class="mobile-footer" />
     <div class="copyright">
       <span class="footer-note">&copy;{{ currentYear }} Joshua Joseph. All rights reserved</span>
       <span class="footer-note">Crafting digital experiences with passion and precision</span>
@@ -8,8 +9,13 @@
 </template>
 
 <script>
+import SideBarItem from './SideBarItem.vue'
+
 export default {
   name: 'FooterSection',
+  components: {
+    SideBarItem,
+  },
   computed: {
     currentYear() {
       return new Date().getFullYear()
@@ -20,16 +26,34 @@ export default {
 
 <style scoped>
 .footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   border-top: 2px solid gray;
   padding: 1rem 0 3rem;
   .copyright {
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
     align-items: center;
+
+    @media (max-width: 450px) {
+      flex-direction: column-reverse;
+      gap: 1rem;
+    }
 
     .footer-note {
       font-size: clamp(0.8125rem, 0.7128rem + 0.3191vw, 1rem);
       font-family: var(--fancy-font);
+    }
+  }
+
+  @media (min-width: 450px) {
+    .mobile-footer {
+      /* display: flex;
+      flex-direction: row;
+      gap: 2rem; */
+      display: block;
     }
   }
 }

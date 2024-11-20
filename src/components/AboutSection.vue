@@ -26,8 +26,7 @@ export default {
   flex-direction: column;
 
   .about-text {
-    font-size: clamp(0.8125rem, 0.7128rem + 0.3191vw, 1rem);
-    line-height: 30px;
+    font-size: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
   }
 }
 </style>

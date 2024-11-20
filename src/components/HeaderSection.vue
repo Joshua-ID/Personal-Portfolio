@@ -3,28 +3,39 @@
     <div class="left-content">
       <div class="brand-logo">&lt;JOSHUA /&gt;</div>
     </div>
-    <div class="right-content">
-      <ul class="nav-link">
-        <li>About</li>
-        <li>Project</li>
-        <li>Contact</li>
-        <li>Resume</li>
-      </ul>
-    </div>
+    <HeaderNavigator />
+    <button @click="toggleOpenMenu" class="hamburger">
+      <i :class="openMenu ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'"></i>
+    </button>
   </div>
 </template>
 
 <script>
+import HeaderNavigator from './HeaderNavigator.vue'
+
 export default {
   name: 'HeaderSection',
+  components: {
+    HeaderNavigator,
+  },
+  data() {
+    return {
+      openMenu: false,
+    }
+  },
+  methods: {
+    toggleOpenMenu() {
+      this.openMenu = !this.openMenu
+    },
+  },
 }
 </script>
 
 <style scoped>
 .header-section {
-  /* background: var(--dark-color); */
   padding: 1rem 3rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
   .left-content {
@@ -35,30 +46,25 @@ export default {
     }
   }
 
-  .right-content {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  /* show toggle on mobile screen */
+  button {
+    display: none;
+    min-width: 30px;
+    border-radius: 5px;
 
-    .nav-link {
+    i {
+      font-size: 1rem;
       display: flex;
-      align-items: center;
-      gap: 2.5rem;
-      list-style: none;
+      justify-content: center;
+      padding: 5px;
+    }
 
-      li {
-        font-size: clamp(0.875rem, 0.742rem + 0.4255vw, 1.125rem);
-        cursor: pointer;
-        transition: transform 0.2s ease-in-out;
+    &:focus {
+      opacity: 0.7;
+    }
 
-        &:last-child {
-          color: var(--main-color);
-        }
-
-        &:hover {
-          transform: translateY(-6px);
-        }
-      }
+    @media (max-width: 675px) {
+      display: block;
     }
   }
 }

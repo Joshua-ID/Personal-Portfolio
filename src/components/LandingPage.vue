@@ -24,8 +24,15 @@ export default {
 <style>
 .landing-page-container {
   overflow: hidden;
-  padding: 2rem 3rem;
+  padding: 2rem 4rem;
   max-width: 1440px;
   margin: auto;
+
+  @media (max-width: 650px) {
+    padding: 0.5rem 1rem;
+  }
+  @media (max-width: 450px) {
+    padding: 0.2rem 0.8rem;
+  }
 }
 </style>
