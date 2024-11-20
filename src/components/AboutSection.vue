@@ -20,13 +20,14 @@ export default {
 
 <style scoped>
 .about-section {
-  padding-top: 4rem;
+  padding-top: 5rem;
   display: flex;
   gap: 2rem;
   flex-direction: column;
 
   .about-text {
-    font-size: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
+    font-size: clamp(0.84375rem, 0.7606rem + 0.266vw, 1rem);
+    line-height: 26px;
   }
 }
 </style>

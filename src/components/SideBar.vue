@@ -27,7 +27,7 @@ export default {
     padding: 1.5rem;
   }
 
-  @media (max-width: 660px) {
+  @media (max-width: 650px) {
     display: none;
   }
 }

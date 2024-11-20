@@ -58,7 +58,7 @@ export default {
 .dock-container {
   display: flex;
   gap: 1rem;
-  z-index: 1000;
+  z-index: 5;
   position: fixed;
   left: 0;
   bottom: 25px;

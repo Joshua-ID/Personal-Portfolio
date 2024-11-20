@@ -23,3 +23,8 @@ export default {
   },
 }
 </script>
+<style>
+.main-container {
+  scroll-behavior: smooth;
+}
+</style>

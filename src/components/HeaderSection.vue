@@ -5,27 +5,32 @@
     </div>
     <HeaderNavigator />
     <button @click="toggleOpenMenu" class="hamburger">
-      <i :class="openMenu ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'"></i>
+      <i :class="toggleMenu ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'"></i>
     </button>
   </div>
+  <FullScreenNavtigator :darkMood="darkMood" v-show="openFullNav" />
 </template>
 
 <script>
+import FullScreenNavtigator from './FullScreenNavtigator.vue'
 import HeaderNavigator from './HeaderNavigator.vue'
 
 export default {
   name: 'HeaderSection',
   components: {
     HeaderNavigator,
+    FullScreenNavtigator,
   },
   data() {
     return {
-      openMenu: false,
+      toggleMenu: false,
+      openFullNav: false,
     }
   },
   methods: {
     toggleOpenMenu() {
-      this.openMenu = !this.openMenu
+      this.toggleMenu = !this.toggleMenu
+      this.openFullNav = !this.openFullNav
     },
   },
 }
@@ -33,10 +38,14 @@ export default {
 
 <style scoped>
 .header-section {
-  padding: 1rem 3rem;
+  padding: 1.5rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 660px) {
+    padding: 1.3rem 1rem;
+  }
 
   .left-content {
     .brand-logo {

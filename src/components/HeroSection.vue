@@ -33,7 +33,7 @@ export default {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 5rem;
 
   .title-and-description-wrapper {
     display: flex;
@@ -46,9 +46,9 @@ export default {
     }
 
     .description {
-      font-size: clamp(0.75rem, 0.617rem + 0.4255vw, 1rem);
+      font-size: clamp(0.84375rem, 0.7606rem + 0.266vw, 1rem);
       max-width: 700px;
-      line-height: 30px;
+      line-height: 26px;
     }
   }
 }

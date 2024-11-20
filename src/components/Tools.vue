@@ -38,8 +38,9 @@ export default {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  animation: scroll-item 10s linear infinite;
+  animation: scroll-item 3s linear infinite;
   transition: transform 2s ease-in-out;
+  will-change: transform; /* Optimizes animations involving `transform` */
 
   &:hover {
     animation-play-state: paused;
@@ -55,8 +56,8 @@ export default {
     /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); */
     cursor: pointer;
     transition:
-      transform 0.3s ease-in-out,
-      box-shadow 0.3s ease-in-out;
+      transform 0.2s ease-in-out,
+      box-shadow 0.2s ease-in-out;
 
     &:hover {
       transform: scale(1.1);
@@ -69,7 +70,7 @@ export default {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-45%);
+    transform: translateX(-36vw);
   }
 }
 </style>

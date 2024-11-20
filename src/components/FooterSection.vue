@@ -30,7 +30,8 @@ export default {
   flex-direction: column;
   gap: 1rem;
   border-top: 2px solid gray;
-  padding: 1rem 0 3rem;
+  padding: 1rem 0 7rem;
+
   .copyright {
     display: flex;
     justify-content: space-between;
@@ -39,6 +40,7 @@ export default {
 
     @media (max-width: 450px) {
       flex-direction: column-reverse;
+      text-align: center;
       gap: 1rem;
     }
 
@@ -48,12 +50,17 @@ export default {
     }
   }
 
-  @media (min-width: 450px) {
-    .mobile-footer {
-      /* display: flex;
+  .mobile-footer {
+    display: none;
+
+    @media (max-width: 650px) {
+      display: inline-flex;
       flex-direction: row;
-      gap: 2rem; */
-      display: block;
+      gap: 2rem;
+    }
+
+    @media (max-width: 450px) {
+      justify-content: center;
     }
   }
 }
