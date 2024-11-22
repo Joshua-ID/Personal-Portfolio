@@ -61,7 +61,7 @@ export default {
   z-index: 5;
   position: fixed;
   left: 0;
-  bottom: 25px;
+  bottom: 20px;
   right: 0;
   margin-left: auto;
   margin-right: auto;

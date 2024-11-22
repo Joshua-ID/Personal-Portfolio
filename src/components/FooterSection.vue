@@ -30,7 +30,7 @@ export default {
   flex-direction: column;
   gap: 1rem;
   border-top: 2px solid gray;
-  padding: 1rem 0 7rem;
+  padding: 1rem 0 6rem;
 
   .copyright {
     display: flex;

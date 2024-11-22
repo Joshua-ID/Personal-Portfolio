@@ -12,6 +12,9 @@
         delivering high-performance, user-centric applications that drive business growth.
       </p>
     </div>
+    <button @click="isDownloading" class="download-resume">
+      Resume <i class="fa-solid fa-download"></i>
+    </button>
     <Tools />
   </div>
 </template>
@@ -24,6 +27,11 @@ export default {
   components: {
     Tools,
   },
+  methods: {
+    isDownloading() {
+      setTimeout(() => {}, 3000)
+    },
+  },
 }
 </script>
 
@@ -33,7 +41,7 @@ export default {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
 
   .title-and-description-wrapper {
     display: flex;
@@ -49,6 +57,25 @@ export default {
       font-size: clamp(0.84375rem, 0.7606rem + 0.266vw, 1rem);
       max-width: 700px;
       line-height: 26px;
+    }
+  }
+
+  .download-resume {
+    font-size: clamp(0.84375rem, 0.7606rem + 0.266vw, 1rem);
+    border: none;
+    outline: none;
+    width: fit-content;
+    padding: 0.7rem 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    /* display: none; */
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    @media (max-device-width: 675px) {
+      display: block;
     }
   }
 }

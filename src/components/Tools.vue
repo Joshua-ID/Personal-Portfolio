@@ -38,9 +38,8 @@ export default {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  animation: scroll-item 3s linear infinite;
-  transition: transform 2s ease-in-out;
-  will-change: transform; /* Optimizes animations involving `transform` */
+  animation: scroll-item 12s linear infinite;
+  transition: transform 6s ease-in-out;
 
   &:hover {
     animation-play-state: paused;
