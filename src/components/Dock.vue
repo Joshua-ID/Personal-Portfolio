@@ -57,7 +57,7 @@ export default {
 <style>
 .dock-container {
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
   z-index: 5;
   position: fixed;
   left: 0;
@@ -68,13 +68,15 @@ export default {
   padding: 0.7rem 1rem;
   width: fit-content;
   border-radius: 15px;
-  box-shadow: 0 1px 2px 0;
+  outline: 1px solid gray;
+  box-shadow: 0 2px 2px 0;
   backdrop-filter: blur(6px);
 
   i {
-    padding: 10px;
+    padding: 8px;
     border-radius: 30px;
-    font-size: clamp(1.1875rem, 0.8218rem + 1.1702vw, 1.875rem);
+    font-size: clamp(1.1875rem, 0.8218rem + 1.1702vw, 1.349rem);
+    /* font-size: clamp(1.0625rem, 0.9375rem + 0.5556vw, 1.4375rem); */
     transition: transform 0.3s ease-in-out;
 
     &:hover {
