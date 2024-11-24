@@ -12,15 +12,13 @@
         delivering high-performance, user-centric applications that drive business growth.
       </p>
     </div>
-    <div class="tooltip-wrapper">
-      <button class="download-resume" @click="handleDownload" :disabled="isDownloading">
-        <span>
-          {{ `${!isDownloading ? 'Resume' : 'Downloading'}` }}
-          <i :class="!isDownloading ? 'fa-solid fa-download' : 'fa-solid fa-spinner fa-spin'"></i>
-        </span>
-      </button>
-      <span class="tooltip">Download Resume</span>
-    </div>
+    <button class="download-resume" @click="handleDownload" :disabled="isDownloading">
+      <span>
+        {{ `${!isDownloading ? 'Resume' : 'Downloading'}` }}
+        <i :class="!isDownloading ? 'fa-solid fa-download' : 'fa-solid fa-spinner fa-spin'"></i>
+      </span>
+    </button>
+
     <Tools />
   </div>
 </template>

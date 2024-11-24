@@ -26,11 +26,12 @@ export default {
 
 <style scoped>
 .footer-section {
+  margin-top: 3rem;
+  padding: 1rem 0 6rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   border-top: 2px solid gray;
-  padding: 1rem 0 6rem;
 
   .copyright {
     display: flex;

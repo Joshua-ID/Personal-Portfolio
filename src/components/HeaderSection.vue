@@ -8,7 +8,7 @@
       <i :class="toggleMenu ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'"></i>
     </button>
   </div>
-  <FullScreenNavtigator :darkMood="darkMood" v-show="openFullNav" />
+  <FullScreenNavtigator v-show="openFullNav" />
 </template>
 
 <script>

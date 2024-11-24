@@ -1,5 +1,5 @@
 <template>
-  <div class="about-section">
+  <div id="about-section">
     <label class="label">About</label>
     <p class="about-text">
       I'm a UI/UX Designer and Full Stack Developer based in India, currently pursuing my degree at
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style scoped>
-.about-section {
+#about-section {
   padding-top: 5rem;
   display: flex;
   gap: 2rem;

@@ -8,6 +8,7 @@
   /* font-family: 'Geist Mono', Roboto, 'Sour Gummy', poppins; */
   font-size: 18px;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 ::selection {
@@ -32,40 +33,26 @@
   font-weight: 700;
 }
 
-.tooltip-wrapper {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  display: inline-block;
-
-  .tooltip {
-    visibility: hidden;
-    position: absolute;
-    top: 10px;
-    left: 0;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 0.5rem;
-    border-radius: 5px;
-    white-space: nowrap;
-    font-size: clamp(0.5rem, 0.367rem + 0.4255vw, 0.75rem);
-    opacity: 0;
-    transition:
-      opacity 0.3s,
-      visibility 0.3s;
-  }
-
-  &:hover .tooltip {
-    visibility: visible;
-    opacity: 0.6;
-  }
+button {
+  border: none;
+  padding: 7px 10px;
+  outline: none;
+  border-radius: 15px;
+  background: none;
+  cursor: pointer;
 }
 
 body.light-mode {
   background-color: var(--light-color);
   color: var(--dark-color);
   transition: background 0.1s ease-in;
+
+  button {
+    color: var(--dark-color);
+    i {
+      color: var(--dark-color);
+    }
+  }
 
   .download-resume {
     background: var(--dark-color);
@@ -76,8 +63,15 @@ body.light-mode {
 /* Dark mode styles */
 body.dark-mode {
   background-color: var(--dark-mood);
-  color: white;
+  color: var(--light-color);
   transition: background 0.7s ease-out;
+
+  button {
+    color: var(--light-color);
+    i {
+      color: var(--light-color);
+    }
+  }
 
   .download-resume {
     color: white;

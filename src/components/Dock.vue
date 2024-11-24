@@ -1,12 +1,24 @@
 <template>
   <div class="dock-container">
-    <i class="fa-solid fa-house-chimney"></i>
-    <i class="fa-brands fa-square-github"></i>
-    <i class="fa-solid fa-user"></i>
-    <i @click="clickToggleMood" :class="darkMood ? 'fa-solid fa-moon' : 'fa-regular fa-moon'"></i>
+    <button>
+      <i class="fa-solid fa-house-chimney"></i>
+    </button>
+    <button>
+      <i class="fa-solid fa-user"></i>
+    </button>
+    <button>
+      <i class="fa-brands fa-github"></i>
+    </button>
+    <button>
+      <i
+        @click="clickToggleMood"
+        :class="darkMood ? 'fa-solid fa-cloud-sun' : 'fa-solid fa-moon'"
+      ></i>
+    </button>
   </div>
 </template>
 
+<!-- <i class="fa-solid fa-cloud-sun"></i> -->
 <script>
 export default {
   name: 'Dock',
@@ -72,16 +84,15 @@ export default {
   box-shadow: 0 2px 2px 0;
   backdrop-filter: blur(6px);
 
-  i {
-    padding: 8px;
-    border-radius: 30px;
-    font-size: clamp(1.1875rem, 0.8218rem + 1.1702vw, 1.349rem);
-    /* font-size: clamp(1.0625rem, 0.9375rem + 0.5556vw, 1.4375rem); */
-    transition: transform 0.3s ease-in-out;
+  button {
+    i {
+      font-size: clamp(1.1875rem, 0.8218rem + 1.1702vw, 1.349rem);
+      transition: transform 0.3s ease-in-out;
 
-    &:hover {
-      transform: scale(1.1);
-      transform: translateY(-6px);
+      &:hover {
+        transform: scale(1.1);
+        transform: translateY(-6px);
+      }
     }
   }
 }

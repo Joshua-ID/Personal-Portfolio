@@ -1,6 +1,6 @@
 <template>
-  <div class="screen-nav">
-    <HeaderNavigator class="header-nav" />
+  <div class="mobile-display-nav">
+    <HeaderNavigator />
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-.screen-nav {
+.mobile-display-nav {
   position: absolute;
   backdrop-filter: blur(6px);
   height: 96vh;
