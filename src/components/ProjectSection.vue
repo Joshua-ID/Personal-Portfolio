@@ -3,10 +3,30 @@
     <label class="label">Project</label>
     <div class="project-card-wrapper">
       <!-- Pass the entire array as the listItem prop to ProjectCard -->
-      <ProjectCard project-image="/image/sample.jpg" :listItem="project1" />
-      <ProjectCard project-image="/image/sample.jpg" :listItem="project2" />
-      <ProjectCard project-image="/image/sample.jpg" :listItem="project3" />
-      <ProjectCard project-image="/image/sample.jpg" :listItem="project4" />
+      <ProjectCard
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        project-image="/image/sample.jpg"
+        :listItem="project1"
+      />
+      <ProjectCard
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        project-image="/image/sample.jpg"
+        :listItem="project2"
+      />
+      <ProjectCard
+        data-aos="fade-right"
+        data-aos-duration="1500"
+        project-image="/image/sample.jpg"
+        :listItem="project3"
+      />
+      <ProjectCard
+        data-aos="fade-left"
+        data-aos-duration="1500"
+        project-image="/image/sample.jpg"
+        :listItem="project4"
+      />
     </div>
   </div>
 </template>

@@ -1,10 +1,14 @@
 <template>
   <div class="nav-content">
     <ul class="nav-link">
-      <li>About</li>
+      <a class="anchor-link" href="#about-section">About</a>
+      <a class="anchor-link" href="#project-section">Project</a>
+      <a class="anchor-link" href="#contact-section">Contact</a>
+      <a class="anchor-link" download="" href="#about-section">Resume</a>
+      <!-- <li>About</li>
       <li>Project</li>
       <li>Contact</li>
-      <li>Resume</li>
+      <li>Resume</li> -->
     </ul>
   </div>
 </template>
@@ -36,7 +40,7 @@ export default {
       display: none;
     }
 
-    li {
+    .anchor-link {
       font-size: clamp(0.875rem, 0.742rem + 0.4255vw, 1.125rem);
       cursor: pointer;
       transition: transform 0.2s ease-in-out;

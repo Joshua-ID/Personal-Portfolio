@@ -1,5 +1,5 @@
 <template>
-  <div class="header-section">
+  <div data-aos="fade-down" data-aos-delay="400" class="header-section">
     <div class="left-content">
       <div class="brand-logo">&lt;JOSHUA /&gt;</div>
     </div>
@@ -38,7 +38,11 @@ export default {
 
 <style scoped>
 .header-section {
-  padding: 1.5rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(20px);
+  padding: 0.6rem 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -1,5 +1,5 @@
 <template>
-  <div class="dock-container">
+  <div data-aos="fade-up" data-aos-delay="400" class="dock-container">
     <button>
       <i class="fa-solid fa-house-chimney"></i>
     </button>
@@ -81,6 +81,7 @@ export default {
   width: fit-content;
   border-radius: 15px;
   outline: 1px solid gray;
+  background: rgba(172, 171, 171, 0.534);
   box-shadow: 0 2px 2px 0;
   backdrop-filter: blur(6px);
 

@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
 .side-bar-container {
-  height: 85vh;
+  height: 83vh;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -23,11 +23,11 @@ export default {
   position: fixed;
   z-index: 1000;
 
-  @media (max-width: 1440px) {
+  @media (max-device-width: 1440px) {
     padding: 1.5rem;
   }
 
-  @media (max-width: 650px) {
+  @media (max-device-width: 650px) {
     display: none;
   }
 }

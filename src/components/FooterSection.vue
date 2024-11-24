@@ -3,7 +3,9 @@
     <SideBarItem class="mobile-footer" />
     <div class="copyright">
       <span class="footer-note">&copy;{{ currentYear }} Joshua Joseph. All rights reserved</span>
-      <span class="footer-note">Crafting digital experiences with passion and precision</span>
+      <span data-aos="zoom-in-right" class="footer-note"
+        >Crafting digital experiences with passion and precision</span
+      >
     </div>
   </div>
 </template>

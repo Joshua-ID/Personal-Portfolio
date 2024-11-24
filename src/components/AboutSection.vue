@@ -1,5 +1,5 @@
 <template>
-  <div id="about-section">
+  <div data-aos="fade-right" data-aos-duration="1500" id="about-section">
     <label class="label">About</label>
     <p class="about-text">
       I'm a UI/UX Designer and Full Stack Developer based in India, currently pursuing my degree at

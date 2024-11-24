@@ -1,11 +1,11 @@
 <template>
   <div class="hero-section">
     <div class="title-and-description-wrapper">
-      <div>
+      <div data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
         <h2 class="title">Hi, I'm Joshua</h2>
         <h2 class="title">FrontEnd Developer</h2>
       </div>
-      <p class="description">
+      <p data-aos="fade-down-right" data-aos-duration="1500" class="description">
         I'm a passionate Full Stack Developer at Voizo, with expertise in building modern web
         applications and scalable backend systems. I specialize in creating innovative solutions
         using cutting-edge technologies like React, Node.js, and cloud services. My focus is on
