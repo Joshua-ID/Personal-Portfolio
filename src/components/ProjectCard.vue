@@ -37,27 +37,33 @@ export default {
   border-radius: 8px;
 
   .project-image {
-    height: 320px;
+    width: 100%;
+    max-height: 320px;
     border-radius: 15px;
   }
 
   .bottom-description-and-ctx-btn {
     display: flex;
+    gap: 18px;
     align-items: center;
     justify-content: space-between;
 
     .item {
-      font-size: 0.7rem;
+      font-size: clamp(0.53125rem, 0.4149rem + 0.3723vw, 0.75rem);
     }
 
     .bottom-description {
       display: flex;
+      flex-wrap: wrap;
       align-self: center;
-      gap: 13px;
+      column-gap: 13px;
+      row-gap: 8px;
+      /* gap: 13px; */
     }
 
     .ctx-btn {
-      font-size: clamp(0.8125rem, 0.7793rem + 0.1064vw, 0.875rem);
+      white-space: nowrap;
+      font-size: clamp(0.75rem, 0.6669rem + 0.266vw, 0.90625rem);
       i {
         font-size: 0.9rem;
         transition: transform 0.2s ease-in-out;

@@ -61,6 +61,10 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 2rem;
+
+    @media (max-device-width: 800px) {
+      grid-template-columns: 1fr;
+    }
   }
 }
 </style>
