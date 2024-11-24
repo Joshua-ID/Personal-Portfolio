@@ -12,13 +12,12 @@
     <button>
       <i
         @click="clickToggleMood"
-        :class="darkMood ? 'fa-solid fa-cloud-sun' : 'fa-solid fa-moon'"
+        :class="darkMood ? 'fa-solid fa-cloud-sun' : 'fa-solid fa-cloud-moon'"
       ></i>
     </button>
   </div>
 </template>
 
-<!-- <i class="fa-solid fa-cloud-sun"></i> -->
 <script>
 export default {
   name: 'Dock',
@@ -88,9 +87,13 @@ export default {
   button {
     i {
       font-size: clamp(1.1875rem, 0.8218rem + 1.1702vw, 1.349rem);
+      padding: 10px 15px;
       transition: transform 0.3s ease-in-out;
 
       &:hover {
+        background: gray;
+        box-shadow: 0 0 15px 1px rgba(74, 75, 74, 0.8);
+        border-radius: 50px;
         transform: scale(1.1);
         transform: translateY(-6px);
       }
