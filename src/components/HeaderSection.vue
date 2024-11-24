@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import FullScreenNavtigator from './FullScreenNavtigator.vue'
+import FullScreenNavtigator from './FullScreenNavigator.vue'
 import HeaderNavigator from './HeaderNavigator.vue'
 
 export default {
