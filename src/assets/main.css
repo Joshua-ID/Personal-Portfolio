@@ -57,8 +57,11 @@ body.light-mode {
     color: var(--dark-color);
   }
   .download-resume {
-    background: var(--dark-color);
     color: var(--light-color);
+    background: var(--dark-color);
+    i {
+      color: var(--light-color);
+    }
   }
 }
 
@@ -80,7 +83,7 @@ body.dark-mode {
   }
 
   .download-resume {
-    color: white;
+    color: var(--light-color);
     background: var(--main-color);
   }
 }

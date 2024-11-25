@@ -7,4 +7,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 createApp(App).mount('#app')
-AOS.init()
+AOS.init({
+  once: false,
+  duration: 1000, // Adjust animation duration
+})

@@ -5,10 +5,6 @@
       <a class="anchor-link" href="#project-section">Project</a>
       <a class="anchor-link" href="#contact-section">Contact</a>
       <a class="anchor-link" download="" href="#about-section">Resume</a>
-      <!-- <li>About</li>
-      <li>Project</li>
-      <li>Contact</li>
-      <li>Resume</li> -->
     </ul>
   </div>
 </template>

@@ -52,7 +52,7 @@ export default {
 
 <style scoped>
 #project-section {
-  padding-top: 5rem;
+  padding-top: 3rem;
   display: flex;
   gap: 2rem;
   flex-direction: column;

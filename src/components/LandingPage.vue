@@ -3,12 +3,14 @@
     <HeroSection />
     <AboutSection />
     <ProjectSection />
+    <ContactSection />
     <FooterSection />
   </div>
 </template>
 
 <script>
 import AboutSection from './AboutSection.vue'
+import ContactSection from './ContactSection.vue'
 import FooterSection from './FooterSection.vue'
 import HeroSection from './HeroSection.vue'
 import ProjectSection from './ProjectSection.vue'
@@ -19,6 +21,7 @@ export default {
     HeroSection,
     AboutSection,
     ProjectSection,
+    ContactSection,
     FooterSection,
   },
 }

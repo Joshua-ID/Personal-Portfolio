@@ -1,13 +1,17 @@
 <template>
   <div data-aos="fade-up" data-aos-delay="400" class="dock-container">
     <button>
-      <i class="fa-solid fa-house-chimney"></i>
+      <a href="/" class="anchor-link">
+        <i class="fa-solid fa-house-chimney" />
+      </a>
     </button>
     <button>
-      <i class="fa-solid fa-user"></i>
+      <a href="#about-section" class="anchor-link"> <i class="fa-solid fa-user" /> </a>
     </button>
     <button>
-      <i class="fa-brands fa-github"></i>
+      <a href="https://github.com/Joshua-ID" target="_blank" class="anchor-link">
+        <i class="fa-brands fa-github" />
+      </a>
     </button>
     <button>
       <i

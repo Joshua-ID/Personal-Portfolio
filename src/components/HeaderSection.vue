@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="fade-down" data-aos-delay="400" class="header-section">
+  <div class="header-section">
     <div class="left-content">
       <div class="brand-logo">&lt;JOSHUA /&gt;</div>
     </div>
@@ -60,13 +60,13 @@ export default {
   }
 
   /* show toggle on mobile screen */
-  button {
+  .hamburger {
     display: none;
     min-width: 30px;
     border-radius: 5px;
 
     i {
-      font-size: 1rem;
+      font-size: 1.3rem;
       display: flex;
       justify-content: center;
       padding: 5px;

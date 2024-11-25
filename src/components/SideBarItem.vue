@@ -1,8 +1,24 @@
 <template>
   <div class="social-icon-wrapper">
-    <i class="fa-brands fa-github"></i>
-    <i class="fa-brands fa-linkedin"></i>
-    <i class="fa-brands fa-discord"></i>
+    <button>
+      <a href="https://github.com/Joshua-ID" target="_blank" class="anchor-link">
+        <i class="fa-brands fa-github" />
+      </a>
+    </button>
+    <button>
+      <a
+        href="https://www.linkedin.com/in/joshua-joseph-31954383/"
+        target="_blank"
+        class="anchor-link"
+      >
+        <i class="fa-brands fa-linkedin" />
+      </a>
+    </button>
+    <button>
+      <a href="/" target="_blank" class="anchor-link">
+        <i class="fa-brands fa-discord" />
+      </a>
+    </button>
   </div>
 </template>
 
