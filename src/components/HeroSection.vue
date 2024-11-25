@@ -13,10 +13,8 @@
       </p>
     </div>
     <button class="download-resume" @click="handleDownload" :disabled="isDownloading">
-      <span>
-        {{ `${!isDownloading ? 'Resume' : 'Downloading'}` }}
-        <i :class="!isDownloading ? 'fa-solid fa-download' : 'fa-solid fa-spinner fa-spin'"></i>
-      </span>
+      {{ `${!isDownloading ? 'Resume' : 'Downloading'}` }}
+      <i :class="!isDownloading ? 'fa-solid fa-download' : 'fa-solid fa-spinner fa-spin'"></i>
     </button>
 
     <Tools />
@@ -45,7 +43,7 @@ export default {
       // Simulate the download process with a timeout
       setTimeout(() => {
         this.isDownloading = false // Reset the state after the download is complete
-      }, 400)
+      }, 800)
     },
   },
 }
