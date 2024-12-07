@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="fade-right" data-aos-duration="1500" class="contact-section">
+  <div data-aos="fade-right" data-aos-duration="1500" id="contact-section">
     <div class="contact-label-and-socials">
       <label class="label">Don't be a stranger</label>
       <div class="social-icons-wrapper">
@@ -43,7 +43,7 @@ export default {
 </script>
 
 <style>
-.contact-section {
+#contact-section {
   padding-top: 2rem;
   display: flex;
   gap: 2rem;

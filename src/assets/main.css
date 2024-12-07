@@ -11,6 +11,20 @@
   scroll-behavior: smooth;
 }
 
+a {
+  color: inherit; /* Use the default text color */
+  text-decoration: none; /* Optional: to remove underlines */
+
+  &:visited {
+    color: inherit; /* Ensures the visited link color is the same as unvisited */
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
 ::selection {
   background: gray;
 }

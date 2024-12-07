@@ -1,14 +1,14 @@
 <template>
   <div class="header-section">
     <div class="left-content">
-      <div class="brand-logo">&lt;JOSHUA /&gt;</div>
+      <div><a class="brand-logo" href="/">&lt;JOSHUA /&gt;</a></div>
     </div>
     <HeaderNavigator />
     <button @click="toggleOpenMenu" class="hamburger">
       <i :class="toggleMenu ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'"></i>
     </button>
   </div>
-  <FullScreenNavtigator v-show="openFullNav" />
+  <FullScreenNavtigator v-show="openFullNav" :closeMenu="toggleOpenMenu" />
 </template>
 
 <script>
@@ -31,7 +31,23 @@ export default {
     toggleOpenMenu() {
       this.toggleMenu = !this.toggleMenu
       this.openFullNav = !this.openFullNav
+      if (this.openFullNav) {
+        document.body.classList.add('no-scroll')
+      } else {
+        document.body.classList.remove('no-scroll')
+      }
     },
+    handleEscapeKey(event) {
+      if (event.key === 'Escape' && this.openFullNav) {
+        this.toggleOpenMenu()
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('keydown', this.handleEscapeKey)
+  },
+  beforeDestroy() {
+    window.removeEventListener('keydown', this.handleEscapeKey)
   },
 }
 </script>
