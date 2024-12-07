@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <a :href="items.link" target="_blank" class="card">
     <img class="project-image" :src="items.image" />
     <div class="bottom-description-and-ctx-btn">
       <div class="bottom-description">
@@ -12,7 +12,7 @@
         >View Project <i class="fa-solid fa-arrow-right"></i
       ></a>
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -44,6 +44,11 @@ export default {
     width: 100%;
     max-height: 320px;
     border-radius: 15px;
+    transition: transform 0.6s ease-in-out;
+    /*
+    &:hover {
+      transform: scale(110%);
+    } */
   }
 
   .bottom-description-and-ctx-btn {

@@ -1,5 +1,5 @@
 <template>
-  <div class="hero-section">
+  <div id="hero-section">
     <div class="title-and-description-wrapper">
       <div data-aos-delay="400" data-aos="fade-down-right" data-aos-duration="1500">
         <h2 class="title">Hi, I'm Joshua</h2>
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style>
-.hero-section {
+#hero-section {
   margin-top: 2rem;
 
   .title-and-description-wrapper {

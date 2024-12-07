@@ -1,7 +1,7 @@
 <template>
   <div data-aos="fade-up" data-aos-delay="400" class="dock-container">
     <button>
-      <a href="/" class="anchor-link">
+      <a href="#hero-section" class="anchor-link">
         <i class="fa-solid fa-house-chimney" />
       </a>
     </button>

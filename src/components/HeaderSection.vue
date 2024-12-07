@@ -1,7 +1,7 @@
 <template>
   <div class="header-section">
     <div class="left-content">
-      <div><a class="brand-logo" href="/">&lt;JOSHUA /&gt;</a></div>
+      <a class="brand-logo" href="#hero-section">&lt;JOSHUA /&gt;</a>
     </div>
     <HeaderNavigator />
     <button @click="toggleOpenMenu" class="hamburger">
