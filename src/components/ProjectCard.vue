@@ -1,14 +1,16 @@
 <template>
   <div class="card">
-    <img class="project-image" :src="projectImage" />
+    <img class="project-image" :src="items.image" />
     <div class="bottom-description-and-ctx-btn">
       <div class="bottom-description">
         <!-- Loop through the listItem array and display each project name -->
-        <label class="item" v-for="project in listItem" :key="project.name">{{
+        <label class="item" v-for="project in items.listItem" :key="project.name">{{
           project.name
         }}</label>
       </div>
-      <button class="ctx-btn">View Project <i class="fa-solid fa-arrow-right"></i></button>
+      <a :href="items.link" target="_blank" class="ctx-btn"
+        >View Project <i class="fa-solid fa-arrow-right"></i
+      ></a>
     </div>
   </div>
 </template>
@@ -17,13 +19,15 @@
 export default {
   name: 'ProjectCard',
   props: {
-    listItem: {
-      type: Array,
-      default: () => [],
-    },
-    projectImage: {
-      type: String,
-      default: '',
+    items: {
+      type: Object,
+      default: () => [
+        {
+          image: '',
+          link: '',
+          listItems: [],
+        },
+      ],
     },
   },
 }

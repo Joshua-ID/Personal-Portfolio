@@ -6,26 +6,29 @@
       <ProjectCard
         data-aos="fade-right"
         data-aos-duration="1500"
-        project-image="/image/sample.jpg"
-        :listItem="project1"
-      />
-      <ProjectCard
-        data-aos="fade-left"
-        data-aos-duration="1500"
-        project-image="/image/sample.jpg"
-        :listItem="project2"
+        :items="{
+          image: '/image/9cloud-moviez.JPG',
+          link: 'https://9cloudmoviez.vercel.app',
+          listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'TypeScript' }],
+        }"
       />
       <ProjectCard
         data-aos="fade-right"
         data-aos-duration="1500"
-        project-image="/image/sample.jpg"
-        :listItem="project3"
+        :items="{
+          image: '/image/photo-splash.PNG',
+          link: 'https://photo-loop.vercel.app',
+          listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'TypeScript' }],
+        }"
       />
       <ProjectCard
-        data-aos="fade-left"
+        data-aos="fade-right"
         data-aos-duration="1500"
-        project-image="/image/sample.jpg"
-        :listItem="project4"
+        :items="{
+          image: '/image/guess-a-number.PNG',
+          link: 'http://number-quest-game.vercel.app',
+          listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'TypeScript' }],
+        }"
       />
     </div>
   </div>
@@ -38,14 +41,6 @@ export default {
   name: 'ProjectSection',
   components: {
     ProjectCard,
-  },
-  data() {
-    return {
-      project1: [{ name: 'Vue' }, { name: 'TypeScript' }, { name: 'React' }],
-      project2: [{ name: 'GitHub' }, { name: 'Vercel' }, { name: 'MaterialUI' }],
-      project3: [{ name: 'React' }, { name: 'Github' }, { name: 'TypeScript' }],
-      project4: [{ name: 'React' }, { name: 'HTML' }, { name: 'TypeScript' }],
-    }
   },
 }
 </script>
