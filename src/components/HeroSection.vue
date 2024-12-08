@@ -6,10 +6,8 @@
         <h2 class="title">FrontEnd Developer</h2>
       </div>
       <p data-aos="fade-right" data-aos-duration="1500" class="description">
-        I'm a passionate Full Stack Developer at Voizo, with expertise in building modern web
-        applications and scalable backend systems. I specialize in creating innovative solutions
-        using cutting-edge technologies like React, Node.js, and cloud services. My focus is on
-        delivering high-performance, user-centric applications that drive business growth.
+        I'm a skilled software developer with experience in Javascript, and expertise in frameworks
+        like Vue, React.
       </p>
     </div>
     <button class="download-resume" @click="handleDownload" :disabled="isDownloading">

@@ -23,7 +23,6 @@ export default {
         { name: 'React', icon: 'fa-brands fa-react' },
         { name: 'NPM', icon: 'fa-brands fa-npm' },
         { name: 'Quasar', icon: '' },
-        { name: 'Git', icon: 'fa-brands fa-square-github' },
         { name: 'Node', icon: 'fa-brands fa-node' },
         { name: 'TypeScript', icon: 'fa-brands fa-node-js' },
         { name: 'React Native', icon: 'fa-brands fa-react' },

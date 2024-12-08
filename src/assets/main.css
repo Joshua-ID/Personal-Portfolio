@@ -85,6 +85,10 @@ body.dark-mode {
   color: var(--light-color);
   transition: background 0.7s ease-out;
 
+  .project-image {
+    filter: brightness(65%);
+  }
+
   .anchor-link {
     color: var(--light-color);
   }
