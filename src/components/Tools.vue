@@ -26,6 +26,21 @@ export default {
         { name: 'Node', icon: 'fa-brands fa-node' },
         { name: 'TypeScript', icon: 'fa-brands fa-node-js' },
         { name: 'React Native', icon: 'fa-brands fa-react' },
+        // duplicating so item
+        { name: 'HTML5', icon: 'fa-brands fa-html5' },
+        { name: 'CSS3', icon: 'fa-brands fa-css3-alt' },
+        { name: 'Tailwind', icon: '' },
+        { name: 'GitHub', icon: 'fa-brands fa-github' },
+        { name: 'SCSS', icon: 'fa-brands fa-sass' },
+        { name: 'JavaScript', icon: 'fa-brands fa-js' },
+        { name: 'VsCode', icon: '' },
+        { name: 'Vue.js', icon: 'fa-brands fa-vuejs' },
+        { name: 'React', icon: 'fa-brands fa-react' },
+        { name: 'NPM', icon: 'fa-brands fa-npm' },
+        { name: 'Quasar', icon: '' },
+        { name: 'Node', icon: 'fa-brands fa-node' },
+        { name: 'TypeScript', icon: 'fa-brands fa-node-js' },
+        { name: 'React Native', icon: 'fa-brands fa-react' },
       ],
     }
   },
@@ -37,7 +52,7 @@ export default {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  animation: scroll-item 12s linear infinite;
+  animation: scroll-item 10s linear infinite;
   transition: transform 6s ease-in-out;
 
   &:hover {
@@ -68,7 +83,7 @@ export default {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-36vw);
+    transform: translateX(-100%);
   }
 }
 </style>
