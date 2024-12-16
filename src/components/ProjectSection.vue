@@ -31,7 +31,7 @@ export default {
           items: {
             image: '/image/9cloud-moviez.JPG',
             link: 'https://9cloudmoviez.vercel.app',
-            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'TypeScript' }],
+            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'API' }],
           },
         },
         {
@@ -40,7 +40,7 @@ export default {
           items: {
             image: '/image/photo-splash.PNG',
             link: 'https://photo-loop.vercel.app',
-            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'TypeScript' }],
+            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
           },
         },
         {
@@ -49,7 +49,16 @@ export default {
           items: {
             image: '/image/guess-a-number.PNG',
             link: 'http://number-quest-game.vercel.app',
-            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'TypeScript' }],
+            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
+          },
+        },
+        {
+          aos: 'zoom-in-down',
+          aosDelay: '500',
+          items: {
+            image: '/image/weather.JPG',
+            link: 'https://cloudy-climate.vercel.app/',
+            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'API' }],
           },
         },
       ],
