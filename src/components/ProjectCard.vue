@@ -39,16 +39,20 @@ export default {
   flex-direction: column;
   gap: 1rem;
   border-radius: 8px;
+  overflow: hidden;
+  position: relative;
 
   .project-image {
     width: 100%;
-    max-height: 320px;
+    height: 280px;
     border-radius: 15px;
+    object-fit: cover;
     transition: transform 0.6s ease-in-out;
-    /*
-    &:hover {
-      transform: scale(110%);
-    } */
+  }
+
+  &:hover .project-image {
+    transform: scale(1.1);
+    opacity: 0.8;
   }
 
   .bottom-description-and-ctx-btn {
