@@ -5,8 +5,9 @@ import 'aos/dist/aos.css'
 
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router/index.js'
 
-createApp(App).mount('#app')
+createApp(App).use(router).mount('#app')
 AOS.init({
   once: false,
   duration: 1000, // Adjust animation duration

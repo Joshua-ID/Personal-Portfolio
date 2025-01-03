@@ -9,8 +9,6 @@
 </template>
 
 <script>
-import HeaderNavigator from './HeaderNavigator.vue'
-
 export default {
   name: 'FullScreenNavigator',
   props: {
@@ -18,9 +16,6 @@ export default {
       type: Function,
       required: true,
     },
-  },
-  components: {
-    HeaderNavigator,
   },
 
   methods: {
