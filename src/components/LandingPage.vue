@@ -6,7 +6,7 @@
     <ContactSection />
     <FooterSection />
     <button v-if="showGoToTop" class="go-to-top-button" @click="scrollToTop">
-      <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-angle-up"></i>
     </button>
   </div>
 </template>

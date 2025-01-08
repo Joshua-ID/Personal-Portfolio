@@ -2,12 +2,16 @@
   <div data-aos="fade-right" data-aos-duration="1500" id="about-section">
     <label class="label">About</label>
     <p class="about-text">
-      I'm FrontEnd Developer based in Nigeria. I'm a technical expertise to create intuitive and
-      scalable digital solutions. I'm a quick learner and collaborate closely with clients to create
-      efficient, scalable, and user-friendly solutions that solve real-world problems. I bridge the
-      gap between aesthetics and functionality. My approach combines user-centered design principles
-      with robust development practices. My focus is on delivering high-performance, user-centric
-      applications that drive business growth. Let's work together to bring your ideas to life!
+      I'm a Front-End Developer based in Nigeria with a passion for creating intuitive, scalable,
+      and impactful digital solutions. With strong technical expertise, I excel at bridging the gap
+      between aesthetics and functionality, ensuring every project I deliver is both visually
+      appealing and highly efficient. I pride myself on being a quick learner who collaborates
+      closely with clients to craft user-friendly solutions tailored to real-world challenges. My
+      approach blends user-centered design principles with robust development practices, enabling me
+      to create high-performance applications that drive business growth.
+      <br />
+      Let’s work together to transform your ideas into reality and create impactful solutions that
+      deliver tangible results.
     </p>
   </div>
 </template>

@@ -6,8 +6,8 @@
         <h2 class="title">FrontEnd Developer</h2>
       </div>
       <p data-aos="fade-right" data-aos-duration="1500" class="description">
-        I'm a skilled software developer with experience in Javascript, and expertise in frameworks
-        like Vue, React.
+        I am a skilled software developer with extensive experience in JavaScript and expertise in
+        modern frameworks like Vue and React.
       </p>
     </div>
     <button class="download-resume" @click="handleDownload" :disabled="isDownloading">
@@ -66,7 +66,7 @@ export default {
 
     .description {
       font-size: clamp(0.84375rem, 0.7606rem + 0.266vw, 1rem);
-      max-width: 700px;
+      max-width: 750px;
       line-height: 26px;
     }
   }

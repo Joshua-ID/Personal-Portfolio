@@ -46,7 +46,7 @@ export default {
   mounted() {
     window.addEventListener('keydown', this.handleEscapeKey)
   },
-  beforeDestroy() {
+  beforeUnmount() {
     window.removeEventListener('keydown', this.handleEscapeKey)
   },
 }
@@ -64,7 +64,7 @@ export default {
   justify-content: space-between;
 
   @media (max-width: 660px) {
-    padding: 1.3rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .left-content {
