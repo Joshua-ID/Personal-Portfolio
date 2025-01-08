@@ -26,12 +26,26 @@ export default {
     return {
       projects: [
         {
-          aos: 'fade-down-right',
+          aos: 'zoom-in-down',
+          aosDelay: '700',
+          items: {
+            image: '/image/guess-a-number.PNG',
+            link: 'http://number-quest-game.vercel.app',
+            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
+          },
+        },
+        {
+          aos: 'fade-up-down',
           aosDelay: '300',
           items: {
-            image: '/image/9cloud-moviez.JPG',
-            link: 'https://9cloudmoviez.vercel.app',
-            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'API' }],
+            image: '/image/gotedo.gif',
+            link: 'https://about.gotedo.com/',
+            listItem: [
+              { name: 'Vue' },
+              { name: 'JavaScript' },
+              { name: 'echarts' },
+              { name: 'API' },
+            ],
           },
         },
         {
@@ -43,13 +57,14 @@ export default {
             listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
           },
         },
+
         {
-          aos: 'zoom-in-down',
-          aosDelay: '700',
+          aos: 'fade-down-right',
+          aosDelay: '300',
           items: {
-            image: '/image/guess-a-number.PNG',
-            link: 'http://number-quest-game.vercel.app',
-            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
+            image: '/image/9cloud-moviez.JPG',
+            link: 'https://9cloudmoviez.vercel.app',
+            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'API' }],
           },
         },
         {
