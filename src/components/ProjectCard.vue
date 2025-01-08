@@ -1,7 +1,7 @@
 <template>
   <a :href="items.link" target="_blank" class="card">
     <div class="project-image-wrapper">
-      <img :src="items.image" />
+      <img class="project-image" :src="items.image" />
     </div>
     <div class="bottom-description-and-ctx-btn">
       <div class="bottom-description">
@@ -49,7 +49,7 @@ export default {
     height: 280px;
     border-radius: 20px;
 
-    img {
+    .project-image {
       width: 100%;
       height: 100%;
       border-radius: 15px;
