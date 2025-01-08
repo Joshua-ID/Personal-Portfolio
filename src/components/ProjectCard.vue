@@ -1,6 +1,8 @@
 <template>
   <a :href="items.link" target="_blank" class="card">
-    <img class="project-image" :src="items.image" />
+    <div class="project-image-wrapper">
+      <img :src="items.image" />
+    </div>
     <div class="bottom-description-and-ctx-btn">
       <div class="bottom-description">
         <!-- Loop through the listItem array and display each project name -->
@@ -20,7 +22,7 @@ export default {
   name: 'ProjectCard',
   props: {
     items: {
-      type: Object,
+      type: Array,
       default: () => [
         {
           image: '',
@@ -39,20 +41,26 @@ export default {
   flex-direction: column;
   gap: 1rem;
   border-radius: 8px;
-  overflow: hidden;
-  position: relative;
 
-  .project-image {
+  .project-image-wrapper {
+    overflow: hidden;
+    position: relative;
     width: 100%;
     height: 280px;
-    border-radius: 15px;
-    object-fit: cover;
-    transition: transform 0.6s ease-in-out;
-  }
+    border-radius: 20px;
 
-  &:hover .project-image {
-    transform: scale(1.1);
-    opacity: 0.8;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 15px;
+      object-fit: cover;
+      transition: transform 0.6s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
   }
 
   .bottom-description-and-ctx-btn {

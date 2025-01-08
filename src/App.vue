@@ -6,12 +6,12 @@
       <SideBar v-if="!isNotFoundPage" />
       <router-view />
     </div>
-    <Dock />
+    <DockComponent />
   </div>
 </template>
 
 <script>
-import Dock from './components/Dock.vue'
+import DockComponent from './components/DockComponent.vue'
 import HeaderSection from './components/HeaderSection.vue'
 import LoadingState from './components/LoadingState.vue'
 import SideBar from './components/SideBar.vue'
@@ -21,7 +21,7 @@ export default {
   components: {
     HeaderSection,
     SideBar,
-    Dock,
+    DockComponent,
     LoadingState,
   },
   data() {

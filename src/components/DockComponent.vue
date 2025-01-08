@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'Dock',
+  name: 'DockComponent',
   data() {
     return {
       darkMood: false,

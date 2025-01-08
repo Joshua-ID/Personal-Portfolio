@@ -2,7 +2,9 @@
   <div class="not-found">
     <h1>404</h1>
     <p>Oops! The page you are looking for does not exist.</p>
-    <router-link to="/">Go back to Home</router-link>
+    <router-link to="/">
+      <span class="back-to-home"> <i class="fa-solid fa-arrow-left"></i> Go back to Home </span>
+    </router-link>
   </div>
 </template>
 
@@ -36,13 +38,21 @@ export default {
   }
 
   p {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 0.4681rem + 1.7021vw, 2rem);
     margin: 20px 0;
   }
 
-  a {
+  .back-to-home {
     text-decoration: none;
     color: #007bff;
+
+    .fa-solid {
+      display: none;
+    }
+
+    &:hover .fa-solid {
+      display: inline-block;
+    }
   }
 }
 </style>
