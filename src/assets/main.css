@@ -55,10 +55,22 @@ button {
   cursor: pointer;
 }
 
+.brand-logo {
+  display: block;
+  width: 100px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 body.light-mode {
   background-color: var(--light-color);
   color: var(--dark-color);
   transition: background 0.1s ease-in;
+
+  .brand-logo {
+    background-image: url('/public/image/logo-name-signature-black.png');
+  }
 
   button {
     color: var(--dark-color);
@@ -84,6 +96,10 @@ body.dark-mode {
   background-color: var(--dark-mood);
   color: var(--light-color);
   transition: background 0.2s ease-out;
+
+  .brand-logo {
+    background-image: url('/public/image/logo-name-signature-white.png');
+  }
 
   .project-image {
     filter: brightness(65%);

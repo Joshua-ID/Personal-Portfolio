@@ -1,7 +1,7 @@
 <template>
   <div class="header-section">
     <div class="left-content">
-      <a class="brand-logo" href="#hero-section">&lt;JOSHUA /&gt;</a>
+      <a class="brand-logo" href="#hero-section"></a>
     </div>
     <HeaderNavigator />
     <button @click="toggleOpenMenu" class="hamburger">
@@ -25,8 +25,10 @@ export default {
     return {
       toggleMenu: false,
       openFullNav: false,
+      darkMood: false,
     }
   },
+
   methods: {
     toggleOpenMenu() {
       this.toggleMenu = !this.toggleMenu

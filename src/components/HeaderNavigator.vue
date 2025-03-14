@@ -4,7 +4,7 @@
       <a class="anchor-link" href="#about-section">About</a>
       <a class="anchor-link" href="#project-section">Project</a>
       <a class="anchor-link" href="#contact-section">Contact</a>
-      <a class="anchor-link" href="/public//PortFolioCV.rtf" download>Resume</a>
+      <a class="anchor-link" href="/public/JoshuaCV.pdf" download="/public/JoshuaCV.pdf">Resume</a>
     </ul>
   </div>
 </template>
