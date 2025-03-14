@@ -7,8 +7,8 @@
     ],
     "routes": [
         {
-            "src": "/portfolio.pdf",
-            "dest": "/public/portfolio.pdf"
+            "src": "/JoshuaCV.pdf",
+            "dest": "/public/JoshuaCV.pdf"
         }
     ]
 }
