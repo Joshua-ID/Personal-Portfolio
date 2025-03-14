@@ -4,11 +4,5 @@
             "source": "/(.*)",
             "destination": "/"
         }
-    ],
-    "routes": [
-        {
-            "src": "/JoshuaCV.pdf",
-            "dest": "/public/JoshuaCV.pdf"
-        }
     ]
 }
