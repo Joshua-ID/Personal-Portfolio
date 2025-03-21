@@ -82,13 +82,6 @@ body.light-mode {
   .anchor-link {
     color: var(--dark-color);
   }
-  .download-resume {
-    color: var(--light-color);
-    background: var(--dark-color);
-    i {
-      color: var(--light-color);
-    }
-  }
 
   .hover-description {
     background-color: var(--light-color);
@@ -124,10 +117,5 @@ body.dark-mode {
     i {
       color: var(--light-color);
     }
-  }
-
-  .download-resume {
-    color: var(--light-color);
-    background: var(--main-color);
   }
 }

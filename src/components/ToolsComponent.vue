@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: 'Tools',
+  name: 'ToolsComponent',
   data() {
     return {
       tools: [
@@ -49,6 +49,7 @@ export default {
 
 <style>
 .tools-container {
+  margin-top: 1.5rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;

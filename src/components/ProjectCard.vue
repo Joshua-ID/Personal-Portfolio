@@ -3,7 +3,7 @@
     <div class="project-image-wrapper">
       <img class="project-image" :src="items.image" />
       <div class="hover-description">
-        <p>{{ items.description || 'Project Description' }}</p>
+        <p class="description">{{ items.description || 'Project Description' }}</p>
       </div>
     </div>
     <div class="bottom-description-and-ctx-btn">
@@ -75,6 +75,10 @@ export default {
   border-radius: 0 0 15px 15px;
   border: 2px solid black;
   transition: bottom 0.6s ease-in-out;
+
+  .description {
+    font-size: clamp(0.8125rem, 0.7793rem + 0.1064vw, 0.875rem);
+  }
 }
 
 .project-image-wrapper:hover .hover-description {
