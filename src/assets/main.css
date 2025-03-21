@@ -89,6 +89,11 @@ body.light-mode {
       color: var(--light-color);
     }
   }
+
+  .hover-description {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
 }
 
 /* Dark mode styles */
@@ -103,6 +108,11 @@ body.dark-mode {
 
   .project-image {
     filter: brightness(65%);
+  }
+
+  .hover-description {
+    background-color: var(--dark-mood);
+    color: var(--light-color);
   }
 
   .anchor-link {

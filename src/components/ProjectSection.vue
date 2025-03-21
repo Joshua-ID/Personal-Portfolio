@@ -32,6 +32,8 @@ export default {
             image: '/image/guess-a-number.PNG',
             link: 'http://number-quest-game.vercel.app',
             listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
+            description:
+              'NumGuess – A fun and engaging number prediction game where you challenge yourself to guess the correct number within a range. Test your luck, improve your guessing skills, and compete for the highest score! 🎲🔢🔥',
           },
         },
         {
@@ -46,6 +48,8 @@ export default {
               { name: 'echarts' },
               { name: 'API' },
             ],
+            description:
+              'Gotedo – A powerful church management system designed to streamline operations, track member engagement, manage events, and handle donations effortlessly. Enhance community interactions with seamless communication and organizational tools. ⛪📊✨',
           },
         },
         {
@@ -55,6 +59,8 @@ export default {
             image: '/image/photo-splash.PNG',
             link: 'https://photo-loop.vercel.app',
             listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
+            description:
+              'WallPic – A vibrant wallpaper app that lets you explore and download high-quality images for your device. Search through stunning collections, discover trending wallpapers, and personalize your screen with breathtaking visuals. 🖼️📱✨',
           },
         },
 
@@ -65,6 +71,8 @@ export default {
             image: '/image/9cloud-moviez.JPG',
             link: 'https://9cloudmoviez.vercel.app',
             listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'API' }],
+            description:
+              'Cloud9 – A sleek and interactive movie app that lets you discover movies, watch trailers, and explore cast details. Stay updated with the latest releases, browse genres, and get personalized recommendations. 🎬🍿',
           },
         },
         {
@@ -74,6 +82,8 @@ export default {
             image: '/image/weather.JPG',
             link: 'https://cloudy-climate.vercel.app/',
             listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'API' }],
+            description:
+              'WeatherApp – A simple and intuitive weather application that provides real-time weather updates, forecasts, and temperature details for any location. Stay informed with accurate weather conditions, including humidity, wind speed, and precipitation. 🌤️🌍',
           },
         },
       ],

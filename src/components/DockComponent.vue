@@ -72,7 +72,7 @@ export default {
 <style>
 .dock-container {
   display: flex;
-  gap: 0.8rem;
+  gap: 1.3rem;
   z-index: 5;
   position: fixed;
   left: 0;
@@ -91,15 +91,15 @@ export default {
   button {
     i {
       font-size: clamp(1.1875rem, 0.8218rem + 1.1702vw, 1.349rem);
-      padding: 10px 15px;
+      padding: 10px;
       transition: transform 0.3s ease-in-out;
 
       &:hover {
-        background: gray;
-        box-shadow: 0 0 15px 1px rgba(74, 75, 74, 0.8);
+        background: rgb(184, 184, 184);
+        box-shadow: 0 3px 10px 1px rgba(74, 75, 74, 0.8);
         border-radius: 50px;
         transform: scale(1.1);
-        transform: translateY(-6px);
+        transform: translateY(-4px);
       }
     }
   }

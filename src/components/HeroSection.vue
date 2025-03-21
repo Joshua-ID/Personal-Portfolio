@@ -10,10 +10,16 @@
         modern frameworks like Vue and React.
       </p>
     </div>
-    <button class="download-resume" @click="handleDownload" :disabled="isDownloading">
+    <a
+      class="download-resume"
+      href="/JoshuaCV.pdf"
+      download="JoshuaCV.pdf"
+      @click="handleDownload"
+      :disabled="isDownloading"
+    >
       {{ `${!isDownloading ? 'Resume' : 'Downloading'}` }}
       <i :class="!isDownloading ? 'fa-solid fa-download' : 'fa-solid fa-spinner fa-spin'"></i>
-    </button>
+    </a>
 
     <Tools />
   </div>
@@ -72,6 +78,7 @@ export default {
   }
 
   .download-resume {
+    width: fit-content;
     margin-bottom: 3rem;
     font-size: clamp(0.84375rem, 0.7606rem + 0.266vw, 1rem);
     border: none;
