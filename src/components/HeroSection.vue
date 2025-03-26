@@ -25,7 +25,7 @@
         @click="handleDownload"
         :disabled="isDownloading"
       >
-        {{ `${!isDownloading ? 'Resume' : 'Downloading'}` }}
+        {{ `${!isDownloading ? 'Download Resume' : 'Downloading'}` }}
         <i :class="!isDownloading ? 'fa-solid fa-download' : 'fa-solid fa-spinner fa-spin'"></i>
       </a>
     </div>
