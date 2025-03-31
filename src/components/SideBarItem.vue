@@ -7,7 +7,7 @@
     </button>
     <button>
       <a
-        href="https://www.linkedin.com/in/joshua-joseph-31954383/"
+        href="https://www.linkedin.com/in/joshua-idara-31954383/"
         target="_blank"
         class="anchor-link"
       >
@@ -15,8 +15,8 @@
       </a>
     </button>
     <button>
-      <a href="/" target="_blank" class="anchor-link">
-        <i class="fa-brands fa-discord" />
+      <a href="https://wa.me/+2348093223489" target="_blank" class="anchor-link">
+        <i class="fa-brands fa-whatsapp" />
       </a>
     </button>
   </div>

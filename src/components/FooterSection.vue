@@ -2,7 +2,7 @@
   <div class="footer-section">
     <SideBarItem class="mobile-footer" />
     <div class="copyright">
-      <span class="footer-note">&copy;{{ currentYear }} Joshua Joseph. All rights reserved</span>
+      <span class="footer-note">&copy;{{ currentYear }} Joshua Idara. All rights reserved</span>
       <span data-aos="zoom-in-right" class="footer-note"
         >Crafting digital experiences with passion and precision</span
       >

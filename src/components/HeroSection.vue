@@ -10,7 +10,7 @@
       </div>
 
       <div data-aos-delay="400" data-aos="fade-up" data-aos-duration="1500" class="title-wrapper">
-        <h2>Joshua Joseph</h2>
+        <h2>Joshua Idara</h2>
         <h2>FrontEnd Developer</h2>
       </div>
       <p data-aos="fade-down" data-aos-duration="500" class="description">

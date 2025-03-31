@@ -10,11 +10,11 @@
 export default {
   data() {
     return {
-      name: 'Joshua Joseph.. ',
+      name: 'Joshua Idara ',
       currentText: '',
       isDeleting: false,
       typingSpeed: 150, // Typing speed in ms
-      deletingSpeed: 100, // Deleting speed in ms
+      deletingSpeed: 160, // Deleting speed in ms
     }
   },
   mounted() {
@@ -67,6 +67,10 @@ export default {
   animation: blink 0.6s step-end infinite;
   font-size: clamp(1.0625rem, 0.2979rem + 2.4468vw, 2.5rem);
   font-weight: 700;
+  transition:
+    background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
 }
 
 /* Cursor blinking effect */
