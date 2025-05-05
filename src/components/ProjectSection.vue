@@ -27,18 +27,23 @@ export default {
       projects: [
         {
           aos: 'zoom-in-down',
-          aosDelay: '700',
+          aosDelay: '500',
           items: {
-            image: '/image/guess-a-number.PNG',
-            link: 'http://number-quest-game.vercel.app',
-            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
+            image: '/image/med-lab-image.JPG',
+            link: 'https://med-lab-survey-management.vercel.app',
+            listItem: [
+              { name: 'Vue' },
+              { name: 'PrimeVue' },
+              { name: 'Firebase' },
+              { name: 'API' },
+            ],
             description:
-              'NumGuess – A fun and engaging number prediction game where you challenge yourself to guess the correct number within a range. Test your luck, improve your guessing skills, and compete for the highest score! 🎲🔢🔥',
+              'This is a hospital management system designed with two user interfaces: one for patients and one for administrators. Patients can book appointments easily. Admins access to dashboard and monitor performance through real-time analytics and improving patient care.',
           },
         },
         {
-          aos: 'fade-up-down',
-          aosDelay: '300',
+          aos: 'zoom-in-down',
+          aosDelay: '500',
           items: {
             image: '/image/gotedo.gif',
             link: 'https://about.gotedo.com/',
@@ -52,21 +57,22 @@ export default {
               'Gotedo – A powerful church management system designed to streamline operations, track member engagement, manage events, and handle donations effortlessly. Enhance community interactions with seamless communication and organizational tools. ⛪📊✨',
           },
         },
+
         {
-          aos: 'fade-down-left',
-          aosDelay: '300',
+          aos: 'zoom-in-down',
+          aosDelay: '600',
           items: {
-            image: '/image/photo-splash.PNG',
-            link: 'https://photo-loop.vercel.app',
+            image: '/image/guess-a-number.PNG',
+            link: 'http://number-quest-game.vercel.app',
             listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
             description:
-              'WallPic – A vibrant wallpaper app that lets you explore and download high-quality images for your device. Search through stunning collections, discover trending wallpapers, and personalize your screen with breathtaking visuals. 🖼️📱✨',
+              'NumGuess – A fun and engaging number prediction game where you challenge yourself to guess the correct number within a range. Test your luck, improve your guessing skills, and compete for the highest score! 🎲🔢🔥',
           },
         },
 
         {
           aos: 'fade-down-right',
-          aosDelay: '300',
+          aosDelay: '600',
           items: {
             image: '/image/9cloud-moviez.JPG',
             link: 'https://9cloudmoviez.vercel.app',
@@ -76,8 +82,19 @@ export default {
           },
         },
         {
-          aos: 'zoom-in-down',
-          aosDelay: '500',
+          aos: 'fade-right',
+          aosDelay: '700',
+          items: {
+            image: '/image/photo-splash.PNG',
+            link: 'https://photo-loop.vercel.app',
+            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
+            description:
+              'WallPic – A vibrant wallpaper app that lets you explore and download high-quality images for your device. Search through stunning collections, discover trending wallpapers, and personalize your screen with breathtaking visuals. 🖼️📱✨',
+          },
+        },
+        {
+          aos: 'fade-left',
+          aosDelay: '700',
           items: {
             image: '/image/weather.JPG',
             link: 'https://cloudy-climate.vercel.app/',

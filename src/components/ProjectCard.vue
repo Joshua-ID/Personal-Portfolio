@@ -81,8 +81,10 @@ export default {
   }
 }
 
-.project-image-wrapper:hover .hover-description {
-  bottom: 0;
+@media (min-device-width: 768px) {
+  .project-image-wrapper:hover .hover-description {
+    bottom: 0;
+  }
 }
 
 .bottom-description-and-ctx-btn {
