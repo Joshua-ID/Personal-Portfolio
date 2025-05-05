@@ -30,7 +30,7 @@ export default {
 .mobile-display-nav {
   position: fixed;
   backdrop-filter: blur(30px);
-  height: 96vh;
+  height: 96dvh;
   width: 100%;
   z-index: 10;
   display: none;

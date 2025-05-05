@@ -15,7 +15,7 @@ export default {
 
 <style scoped>
 .side-bar-container {
-  height: 83vh;
+  height: 83dvh;
   padding: 2rem;
   display: flex;
   justify-content: center;

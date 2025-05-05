@@ -76,7 +76,7 @@ export default {
 <style scoped>
 #hero-section {
   margin-top: 1.5rem;
-  height: 80vh;
+  height: 80dvh;
 }
 
 .circle-container {

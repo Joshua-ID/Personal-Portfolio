@@ -58,7 +58,7 @@ export default {
   justify-content: center;
   align-items: center;
   background: transparent;
-  height: 100vh;
+  height: 100dvh;
 }
 
 .typing-animation {

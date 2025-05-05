@@ -21,7 +21,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 80vh;
+  height: 80dvh;
   width: 100%;
   text-align: center;
 
