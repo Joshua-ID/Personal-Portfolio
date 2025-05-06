@@ -59,7 +59,7 @@ export default {
         },
 
         {
-          aos: 'zoom-in-down',
+          aos: 'zoom-in-up',
           aosDelay: '600',
           items: {
             image: '/image/guess-a-number.PNG',
@@ -71,7 +71,7 @@ export default {
         },
 
         {
-          aos: 'fade-down-right',
+          aos: 'zoom-in-up',
           aosDelay: '600',
           items: {
             image: '/image/9cloud-moviez.JPG',

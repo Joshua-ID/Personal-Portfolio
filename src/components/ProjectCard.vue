@@ -42,6 +42,8 @@ export default {
   flex-direction: column;
   gap: 1rem;
   border-radius: 8px;
+  padding: 0.75rem;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-image-wrapper {
