@@ -1,5 +1,5 @@
 <template>
-  <div id="project-section">
+  <section id="project-section">
     <label data-aos="fade-right" class="label">Project</label>
     <div class="project-card-wrapper">
       <!-- Pass the entire array as the listItem prop to ProjectCard -->
@@ -11,7 +11,7 @@
         :items="project.items"
       />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

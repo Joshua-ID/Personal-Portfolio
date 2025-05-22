@@ -1,5 +1,5 @@
 <template>
-  <div id="hero-section">
+  <section id="hero-section">
     <div class="title-and-description-wrapper">
       <div class="circle-container">
         <div class="icons-wrapper">
@@ -31,7 +31,7 @@
     </div>
 
     <ToolsComponent class="tool-slide" />
-  </div>
+  </section>
 </template>
 
 <script>

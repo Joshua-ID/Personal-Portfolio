@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-section">
+  <footer class="footer-section">
     <SideBarItem class="mobile-footer" />
     <div class="copyright">
       <span class="footer-note">&copy;{{ currentYear }} Joshua Idara. All rights reserved</span>
@@ -7,7 +7,7 @@
         >Crafting digital experiences with passion and precision</span
       >
     </div>
-  </div>
+  </footer>
 </template>
 
 <script>

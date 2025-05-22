@@ -1,22 +1,24 @@
 <template>
-  <a :href="items.link" target="_blank" class="card">
-    <div class="project-image-wrapper">
-      <img class="project-image" :src="items.image" />
-      <div class="hover-description">
-        <p class="description">{{ items.description || 'Project Description' }}</p>
+  <section>
+    <a :href="items.link" target="_blank" class="card">
+      <div class="project-image-wrapper">
+        <img class="project-image" :src="items.image" />
+        <div class="hover-description">
+          <p class="description">{{ items.description || 'Project Description' }}</p>
+        </div>
       </div>
-    </div>
-    <div class="bottom-description-and-ctx-btn">
-      <div class="bottom-description">
-        <label class="item" v-for="project in items.listItem" :key="project.name">{{
-          project.name
-        }}</label>
+      <div class="bottom-description-and-ctx-btn">
+        <div class="bottom-description">
+          <label class="item" v-for="project in items.listItem" :key="project.name">{{
+            project.name
+          }}</label>
+        </div>
+        <a :href="items.link" target="_blank" class="ctx-btn"
+          >View Project <i class="fa-solid fa-arrow-right"></i
+        ></a>
       </div>
-      <a :href="items.link" target="_blank" class="ctx-btn"
-        >View Project <i class="fa-solid fa-arrow-right"></i
-      ></a>
-    </div>
-  </a>
+    </a>
+  </section>
 </template>
 
 <script>

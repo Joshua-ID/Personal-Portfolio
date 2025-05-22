@@ -1,12 +1,12 @@
 <template>
-  <div class="nav-content">
+  <nav class="nav-content">
     <ul class="nav-link">
       <a class="anchor-link" href="#about-section">About</a>
       <a class="anchor-link" href="#project-section">Project</a>
       <a class="anchor-link" href="#contact-section">Contact</a>
       <a class="anchor-link" href="/JoshuaCV.pdf" download="JoshuaCV.pdf">Resume</a>
     </ul>
-  </div>
+  </nav>
 </template>
 
 <script>

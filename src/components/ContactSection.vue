@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="fade-right" data-aos-duration="1500" id="contact-section">
+  <section data-aos="fade-right" data-aos-duration="1500" id="contact-section">
     <div class="contact-label-and-socials">
       <label class="label">Don't be a stranger</label>
       <div class="social-icons-wrapper">
@@ -33,7 +33,7 @@
         /></a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

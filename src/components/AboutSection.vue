@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="fade-right" data-aos-duration="1500" id="about-section">
+  <section data-aos="fade-right" data-aos-duration="1500" id="about-section">
     <label class="label">About</label>
     <p class="about-text">
       I'm a Front-End Developer based in Nigeria with a passion for creating intuitive, scalable,
@@ -13,7 +13,7 @@
       Let’s work together to transform your ideas into reality and create impactful solutions that
       deliver tangible results.
     </p>
-  </div>
+  </section>
 </template>
 
 <script>

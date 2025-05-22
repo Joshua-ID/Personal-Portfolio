@@ -1,5 +1,5 @@
 <template>
-  <div class="header-section">
+  <header class="header-section">
     <div class="left-content">
       <a class="brand-logo" href="#hero-section"></a>
     </div>
@@ -7,7 +7,7 @@
     <button @click="toggleOpenMenu" class="hamburger">
       <i :class="toggleMenu ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'"></i>
     </button>
-  </div>
+  </header>
   <FullScreenNavtigator v-show="openFullNav" :closeMenu="toggleOpenMenu" />
 </template>
 
