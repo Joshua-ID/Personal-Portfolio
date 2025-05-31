@@ -1,23 +1,30 @@
 <template>
   <section>
-    <a :href="items.link" target="_blank" class="card">
-      <div class="project-image-wrapper">
-        <img class="project-image" :src="items.image" />
-        <div class="hover-description">
-          <p class="description">{{ items.description || 'Project Description' }}</p>
-        </div>
+    <div target="_blank" class="card">
+      <div v-if="items.banner" class="upcoming-project">
+        <span>Upcoming Project...</span>
+        <span>Book Store</span>
       </div>
-      <div class="bottom-description-and-ctx-btn">
-        <div class="bottom-description">
-          <label class="item" v-for="project in items.listItem" :key="project.name">{{
-            project.name
-          }}</label>
+      <span v-if="items.banner" class="banners"> <p class="heart-beat">Watch out!</p> </span>
+      <a :href="items.link" v-else target="_blank" class="project-card">
+        <div class="project-image-wrapper">
+          <img class="project-image" :src="items.image" />
+          <div class="hover-description">
+            <p class="description">{{ items.description || 'Project Description' }}</p>
+          </div>
         </div>
-        <a :href="items.link" target="_blank" class="ctx-btn"
-          >View Project <i class="fa-solid fa-arrow-right"></i
-        ></a>
-      </div>
-    </a>
+        <div class="bottom-description-and-ctx-btn">
+          <div class="bottom-description">
+            <label class="item" v-for="project in items.listItem" :key="project.name">{{
+              project.name
+            }}</label>
+          </div>
+          <a :href="items.link" target="_blank" class="ctx-btn"
+            >View Project <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </a>
+    </div>
   </section>
 </template>
 
@@ -32,6 +39,7 @@ export default {
         link: '',
         description: '',
         listItem: [],
+        banner: true,
       }),
     },
   },
@@ -46,6 +54,71 @@ export default {
   border-radius: 8px;
   padding: 0.75rem;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  height: 100%;
+}
+
+.upcoming-project {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-device-width: 800px) {
+    height: 334px;
+  }
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.banners {
+  position: absolute;
+  top: 15px;
+  left: -15px;
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  background-color: var(--main-color);
+  z-index: 1000;
+  border-radius: 5px;
+  transform: rotate(-25deg);
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: clamp(0.775rem, 0.75rem + 0.25vw, 0.75rem);
+
+  .heart-beat {
+    animation: heartBeat 1.5s infinite ease-in-out;
+  }
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.2);
+  }
+  28% {
+    transform: scale(1);
+  }
+
+  42% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .project-image-wrapper {
@@ -93,8 +166,8 @@ export default {
 
 .bottom-description-and-ctx-btn {
   display: flex;
-  gap: 18px;
-  align-items: center;
+  gap: 1.5rem;
+  align-items: flex-start;
   justify-content: space-between;
 }
 

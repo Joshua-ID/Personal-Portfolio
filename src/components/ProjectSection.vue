@@ -29,16 +29,7 @@ export default {
           aos: 'zoom-in-down',
           aosDelay: '500',
           items: {
-            image: '/image/med-lab-image.JPG',
-            link: 'https://med-lab-survey-management.vercel.app',
-            listItem: [
-              { name: 'Vue' },
-              { name: 'PrimeVue' },
-              { name: 'Firebase' },
-              { name: 'API' },
-            ],
-            description:
-              'This is a hospital management system designed with two user interfaces: one for patients and one for administrators. Patients can book appointments easily. Admins access to dashboard and monitor performance through real-time analytics and improving patient care.',
+            banner: true,
           },
         },
         {
@@ -57,9 +48,25 @@ export default {
               'Gotedo – A powerful church management system designed to streamline operations, track member engagement, manage events, and handle donations effortlessly. Enhance community interactions with seamless communication and organizational tools. ⛪📊✨',
           },
         },
+        {
+          aos: 'fade-right',
+          aosDelay: '600',
+          items: {
+            image: '/image/med-lab-image.JPG',
+            link: 'https://med-lab-survey-management.vercel.app',
+            listItem: [
+              { name: 'Vue' },
+              { name: 'PrimeVue' },
+              { name: 'Firebase' },
+              { name: 'API' },
+            ],
+            description:
+              'This is a hospital management system designed with two user interfaces: one for patients and one for administrators. Patients can book appointments easily. Admins access to dashboard and monitor performance through real-time analytics and improving patient care.',
+          },
+        },
 
         {
-          aos: 'zoom-in-up',
+          aos: 'fade-left',
           aosDelay: '600',
           items: {
             image: '/image/guess-a-number.PNG',
@@ -71,8 +78,8 @@ export default {
         },
 
         {
-          aos: 'zoom-in-up',
-          aosDelay: '600',
+          aos: 'zoom-in-right',
+          aosDelay: '700',
           items: {
             image: '/image/9cloud-moviez.JPG',
             link: 'https://9cloudmoviez.vercel.app',
@@ -82,7 +89,7 @@ export default {
           },
         },
         {
-          aos: 'fade-right',
+          aos: 'zoom-in-left',
           aosDelay: '700',
           items: {
             image: '/image/photo-splash.PNG',
@@ -93,8 +100,8 @@ export default {
           },
         },
         {
-          aos: 'fade-left',
-          aosDelay: '700',
+          aos: 'zoom-in-up',
+          aosDelay: '800',
           items: {
             image: '/image/weather.JPG',
             link: 'https://cloudy-climate.vercel.app/',
@@ -119,7 +126,15 @@ export default {
   .project-card-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
-    gap: 3rem 5rem;
+    gap: 2rem 4rem;
+
+    @media (max-device-width: 1200px) {
+      gap: 2.5rem 3rem;
+    }
+
+    @media (max-device-width: 980px) {
+      gap: 2rem;
+    }
 
     @media (max-device-width: 800px) {
       grid-template-columns: 1fr;
