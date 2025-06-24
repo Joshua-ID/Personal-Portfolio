@@ -41,8 +41,8 @@ export default {
             listItem: [
               { name: 'Vue' },
               { name: 'JavaScript' },
-              { name: 'echarts' },
-              { name: 'API' },
+              { name: 'Echarts' },
+              { name: 'Quasar' },
             ],
             description:
               'Gotedo – A powerful church management system designed to streamline operations, track member engagement, manage events, and handle donations effortlessly. Enhance community interactions with seamless communication and organizational tools. ⛪📊✨',
@@ -71,7 +71,7 @@ export default {
           items: {
             image: '/image/guess-a-number.PNG',
             link: 'http://number-quest-game.vercel.app',
-            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
+            listItem: [{ name: 'Vanilla JavaScript' }, { name: 'HTML' }, { name: 'CSS' }],
             description:
               'NumGuess – A fun and engaging number prediction game where you challenge yourself to guess the correct number within a range. Test your luck, improve your guessing skills, and compete for the highest score! 🎲🔢🔥',
           },
@@ -94,7 +94,7 @@ export default {
           items: {
             image: '/image/photo-splash.PNG',
             link: 'https://photo-loop.vercel.app',
-            listItem: [{ name: 'Vue' }, { name: 'JavaScript' }, { name: 'HTML' }],
+            listItem: [{ name: 'API' }, { name: 'JavaScript' }, { name: 'HTML' }],
             description:
               'WallPic – A vibrant wallpaper app that lets you explore and download high-quality images for your device. Search through stunning collections, discover trending wallpapers, and personalize your screen with breathtaking visuals. 🖼️📱✨',
           },
