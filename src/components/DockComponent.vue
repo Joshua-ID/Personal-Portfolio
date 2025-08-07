@@ -1,19 +1,19 @@
 <template>
   <div data-aos="fade-up" data-aos-delay="400" class="dock-container">
-    <button>
+    <button aria-label="home">
       <a href="#hero-section" class="anchor-link">
         <i class="fa-solid fa-house-chimney" />
       </a>
     </button>
-    <button>
+    <button aria-label="about">
       <a href="#about-section" class="anchor-link"> <i class="fa-solid fa-user" /> </a>
     </button>
-    <button>
+    <button aria-label="github">
       <a href="https://github.com/Joshua-ID" target="_blank" class="anchor-link">
         <i class="fa-brands fa-github" />
       </a>
     </button>
-    <button>
+    <button aria-label="toggle dark mode">
       <i
         @click="clickToggleMood"
         :class="darkMood ? 'fa-solid fa-cloud-sun' : 'fa-solid fa-cloud-moon'"
