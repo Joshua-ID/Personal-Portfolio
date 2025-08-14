@@ -29,7 +29,18 @@ export default {
           aos: 'zoom-in-down',
           aosDelay: '500',
           items: {
-            banner: true,
+            image: '/image/curate-books.JPG',
+            link: 'https://curatebooks.vercel.app/',
+            listItem: [
+              { name: 'Vue' },
+              { name: 'ChakraUI' },
+              { name: 'Firebase' },
+              { name: 'Strapi' },
+              { name: 'Cloudinary' },
+              { name: 'Gutendex API' },
+            ],
+            description:
+              'Discover fresh insights, creative ideas, and practical tips in this engaging blog post designed to inspire curious teens, guide aspiring and seasoned developers, and offer advertisers a deeper understanding of digital trends. 📚   🚀🌟',
           },
         },
         {
