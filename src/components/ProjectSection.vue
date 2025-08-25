@@ -32,7 +32,7 @@ export default {
             image: '/image/curate-books.JPG',
             link: 'https://curatebooks.vercel.app/',
             listItem: [
-              { name: 'Vue' },
+              { name: 'React' },
               { name: 'ChakraUI' },
               { name: 'Firebase' },
               { name: 'Strapi' },
@@ -65,12 +65,7 @@ export default {
           items: {
             image: '/image/med-lab-image.JPG',
             link: 'https://med-lab-survey-management.vercel.app',
-            listItem: [
-              { name: 'Vue' },
-              { name: 'PrimeVue' },
-              { name: 'Firebase' },
-              { name: 'API' },
-            ],
+            listItem: [{ name: 'Vue' }, { name: 'PrimeVue' }, { name: 'Firebase' }],
             description:
               'This is a hospital management system designed with two user interfaces: one for patients and one for administrators. Patients can book appointments easily. Admins access to dashboard and monitor performance through real-time analytics and improving patient care.',
           },
@@ -105,7 +100,7 @@ export default {
           items: {
             image: '/image/photo-splash.PNG',
             link: 'https://photo-loop.vercel.app',
-            listItem: [{ name: 'API' }, { name: 'JavaScript' }, { name: 'HTML' }],
+            listItem: [{ name: 'JavaScript' }, { name: 'HTML/CSS' }, { name: 'API' }],
             description:
               'WallPic – A vibrant wallpaper app that lets you explore and download high-quality images for your device. Search through stunning collections, discover trending wallpapers, and personalize your screen with breathtaking visuals. 🖼️📱✨',
           },
