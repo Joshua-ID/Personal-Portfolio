@@ -40,7 +40,7 @@ export default {
               { name: 'Gutendex API' },
             ],
             description:
-              'Discover fresh insights, creative ideas, and practical tips in this engaging blog post designed to inspire curious teens, guide aspiring and seasoned developers, and offer advertisers a deeper understanding of digital trends. 📚   🚀🌟',
+              'Discover fresh insights, creative ideas, and practical tips in this engaging blog post designed to inspire curious teens, guide aspiring and seasoned developers, and offer advertisers a deeper understanding of digital trends. 📚🚀🌟',
           },
         },
         {
@@ -68,6 +68,16 @@ export default {
             listItem: [{ name: 'Vue' }, { name: 'PrimeVue' }, { name: 'Firebase' }],
             description:
               'This is a hospital management system designed with two user interfaces: one for patients and one for administrators. Patients can book appointments easily. Admins access to dashboard and monitor performance through real-time analytics and improving patient care.',
+          },
+        },
+        {
+          aos: 'fade-left',
+          aosDelay: '600',
+          items: {
+            image: '/image/gym-image.JPG',
+            link: 'https://gymnastic-website.vercel.app/',
+            listItem: [{ name: 'Next.js' }, { name: 'React' }, { name: 'Tailwind' }],
+            description: `Transform Your Body, Transform Your Life.Unleash the strongest version of yourself at PowerFit. Where legends are made, limits are broken, and every rep counts towards your ultimate transformation and fitness goals. 🏋️‍♀️💪🏆`,
           },
         },
 
