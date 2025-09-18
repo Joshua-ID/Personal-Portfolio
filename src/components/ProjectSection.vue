@@ -77,7 +77,7 @@ export default {
           items: {
             image: '/image/keepish-note.JPG',
             link: 'https://keepish-note-app.vercel.app',
-            listItem: [{ name: 'React' }, { name: 'websocket' }, { name: 'Tailwind' }],
+            listItem: [{ name: 'React' }, { name: 'Websocket' }, { name: 'Tailwind' }],
             description: `Keepish Note - A note taking app where you can store and keep your information safely on your device. Set reminders for your todo activities and never forget important tasks again. ⏰️‍♂️ 📝`,
           },
         },
