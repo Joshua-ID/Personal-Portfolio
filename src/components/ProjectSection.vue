@@ -74,10 +74,20 @@ export default {
           aos: 'fade-left',
           aosDelay: '600',
           items: {
-            image: '/image/gym-image.JPG',
+            image: '/image/keepish-note.JPG',
             link: 'https://gymnastic-website.vercel.app/',
             listItem: [{ name: 'Next.js' }, { name: 'React' }, { name: 'Tailwind' }],
             description: `Transform Your Body, Transform Your Life.Unleash the strongest version of yourself at PowerFit. Where legends are made, limits are broken, and every rep counts towards your ultimate transformation and fitness goals. 🏋️‍♀️💪🏆`,
+          },
+        },
+        {
+          aos: 'zoom-in-left',
+          aosDelay: '650',
+          items: {
+            image: '/image/gym-image.JPG',
+            link: 'https://keepish-note-app.vercel.app',
+            listItem: [{ name: 'React' }, { name: 'websocket' }, { name: 'Tailwind' }],
+            description: `Keepish Note - A note taking app where you can store and keep your information safely on your device. Set reminders for your todo activities and never forget important tasks again. ⏰️‍♂️ 📝`,
           },
         },
 
