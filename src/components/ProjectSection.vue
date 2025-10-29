@@ -29,6 +29,23 @@ export default {
           aos: 'zoom-in-down',
           aosDelay: '500',
           items: {
+            image: '/image/v2-portfolio.JPG',
+            link: 'https://joshua-idara.vercel.app',
+            listItem: [
+              { name: 'Next.js' },
+              { name: 'Shadcn/ui' },
+              { name: 'GSAP' },
+              { name: 'i18next' },
+              { name: 'Tailwind' },
+            ],
+            description:
+              'A responsive, modern and visually appealing portfolio website built with Next.js, showcasing my skills and projects. Version 2 includes improved performance, accessibility, and user experience. 🚀 📝',
+          },
+        },
+        {
+          aos: 'zoom-in-down',
+          aosDelay: '500',
+          items: {
             image: '/image/curate-books.JPG',
             link: 'https://curatebooks.vercel.app/',
             listItem: [
