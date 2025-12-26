@@ -30,7 +30,7 @@ export default {
           aosDelay: '500',
           items: {
             image: '/image/v2-portfolio.JPG',
-            link: 'https://joshua-idara.vercel.app',
+            link: 'https://joshuaid.qzz.io',
             listItem: [
               { name: 'Next.js' },
               { name: 'Shadcn/ui' },
